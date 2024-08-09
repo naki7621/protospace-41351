@@ -1,0 +1,10 @@
+<div class="prototype">
+  <% if prototype.image.attached? %>
+    <%= link_to prototype_path(prototype) do %>
+      <%= image_tag prototype.image, alt: "Prototype image" %>
+    <% end %>
+  <% end %>
+  <h2><%= prototype.title %></h2>
+  <p><%= prototype.catch_copy %></p>
+  <p>投稿者: <%= prototype.user.name %></p>
+</div>
