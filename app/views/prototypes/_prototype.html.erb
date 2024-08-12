@@ -6,5 +6,5 @@
   <% end %>
   <h2><%= prototype.title %></h2>
   <p><%= prototype.catch_copy %></p>
-  <p>投稿者: <%= prototype.user.name %></p>
+  <p>by: <%= link_to prototype.user.name, user_path(prototype.user), class: :comment_user %></p>
 </div>
